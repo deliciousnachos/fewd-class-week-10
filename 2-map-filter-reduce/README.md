@@ -83,7 +83,7 @@ Using `map`, create a new array that doubles each value in the array `[1, 2, 3, 
 `filter` is called on an array and takes a function as an argument. The function is called on each element of the array and returns either true or false. If the function returns true, the element is added to a new array. If not, it is not added to the array.
 
 ```js
-var evens = arr.map(function(element) {
+var evens = arr.filter(function(element) {
   if (element % 2 === 0) {
     return true;
   } else {
@@ -93,7 +93,7 @@ var evens = arr.map(function(element) {
 
 console.log(evens) // [ 2, 4 ]
 
-var inTwenties = arr.map(function(element) {
+var inTwenties = arr.filter(function(element) {
   if (element.age < 20) {
     return false;
   } else {
