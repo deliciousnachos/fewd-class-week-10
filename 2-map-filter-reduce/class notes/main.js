@@ -146,6 +146,37 @@ console.log(divisibleFive)
 
 
 
+// reduce returns an accumulator 
+
+var sum = bigArr.reduce(function(accumulator, element) {
+  accumulator = accumulator + element
+  return accumulator
+}, 0) //so, the function and then what number the accumulator will start at 
+
+console.log(sum)
+
+
+// another example 
+
+var objects = [
+  { name: 'j', age: 28 },
+  { name: 'ryn', age: 29 },
+  { name: 'moose', age: 18 },
+];
+
+var ageLookup = objects.reduce(function(acc, el) {
+  acc[el.name] = el.age
+  return acc
+}, {})
+console.log(ageLookup)
+console.log(ageLookup.moose)
+
+
+
+
+
+
+
 
 
 
